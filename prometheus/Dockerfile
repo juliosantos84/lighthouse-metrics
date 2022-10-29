@@ -1,4 +1,5 @@
 FROM prom/prometheus
+RUN mkdir -p /prometheus/targets
 ADD scrape-targets.json /prometheus/targets/scrape-targets.json
 ADD prometheus.yml /etc/prometheus/
 ENTRYPOINT [ "/bin/prometheus" ]
