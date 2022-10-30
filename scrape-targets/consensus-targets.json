@@ -1,7 +1,8 @@
 [
   {
     "labels": {
-      "job": "nodes"
+      "job": "nodes",
+      "service": "lighthouse"
     },
     "targets": [
       "localhost:5054",
